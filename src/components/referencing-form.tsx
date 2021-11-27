@@ -263,6 +263,7 @@ function ReferencingForm() {
   };
 
   const handleEmployerChange = (employer: Employer) => {
+    setValidationError(false);
     setEmployers({ ...employers, [employer.id]: employer });
   };
 
@@ -292,6 +293,7 @@ function ReferencingForm() {
   };
 
   const handleAddAnotherEmployerClick = () => {
+    setValidationError(false);
     setShowAnotherEmployerFieldset(true);
   };
 
